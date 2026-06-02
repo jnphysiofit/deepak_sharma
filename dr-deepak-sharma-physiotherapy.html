@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Deepak Sharma | Physiotherapy & Rehab</title>
+  <meta name="description" content="Modern physiotherapy website for Dr. Deepak Sharma offering sports injury care, knee pain treatment, tennis elbow rehab, back pain, neck pain, and individualized fitness rehab protocols." />
+  <meta name="theme-color" content="#0f8f8f" />
+  <meta property="og:title" content="Dr. Deepak Sharma | Physiotherapy & Rehab" />
+  <meta property="og:description" content="Book appointments for sports injuries, knee pain, tennis elbow, back pain, neck pain, and personalized rehabilitation." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --color-bg: #f2fbfb;
+      --color-surface: #ffffff;
+      --color-surface-2: #f6fefe;
+      --color-surface-offset: #e3f5f5;
+      --color-surface-dynamic: #d2ecec;
+      --color-divider: rgba(4, 58, 63, 0.08);
+      --color-border: rgba(4, 58, 63, 0.12);
+      --color-text: #133235;
+      --color-text-muted: #55787b;
+      --color-text-faint: #7f9b9d;
+      --color-text-inverse: #f5ffff;
+      --color-primary: #0f8f8f;
+      --color-primary-hover: #0b7272;
+      --color-primary-active: #095959;
+      --color-primary-highlight: #d7f1f1;
+      --color-secondary: #36b5b5;
+      --color-accent: #75d6c7;
+      --color-success: #2d8f63;
+      --shadow-sm: 0 8px 20px rgba(5, 68, 73, 0.06);
+      --shadow-md: 0 18px 40px rgba(5, 68, 73, 0.1);
+      --shadow-lg: 0 26px 60px rgba(5, 68, 73, 0.14);
+      --radius-sm: .65rem;
+      --radius-md: 1rem;
+      --radius-lg: 1.5rem;
+      --radius-xl: 2rem;
+      --radius-full: 999px;
+      --space-1: .25rem;
+      --space-2: .5rem;
+      --space-3: .75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --space-24: 6rem;
+      --text-xs: clamp(.75rem, .72rem + .18vw, .875rem);
+      --text-sm: clamp(.875rem, .82rem + .24vw, 1rem);
+      --text-base: clamp(1rem, .98rem + .2vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + .6vw, 1.5rem);
+      --text-xl: clamp(1.6rem, 1.2rem + 1.2vw, 2.5rem);
+      --text-2xl: clamp(2.3rem, 1.5rem + 3vw, 4.6rem);
+      --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      --font-display: 'Outfit', system-ui, sans-serif;
+      --font-body: 'Manrope', system-ui, sans-serif;
+    }
+
+    [data-theme="dark"] {
+      --color-bg: #071516;
+      --color-surface: #0d2022;
+      --color-surface-2: #10282a;
+      --color-surface-offset: #133133;
+      --color-surface-dynamic: #194244;
+      --color-divider: rgba(190, 237, 235, 0.08);
+      --color-border: rgba(190, 237, 235, 0.12);
+      --color-text: #e8fbfb;
+      --color-text-muted: #a4c7c7;
+      --color-text-faint: #7ea1a1;
+      --color-text-inverse: #0d2022;
+      --color-primary: #58c6c6;
+      --color-primary-hover: #79d5d5;
+      --color-primary-active: #93e1e1;
+      --color-primary-highlight: rgba(88, 198, 198, 0.14);
+      --color-secondary: #7ce1d1;
+      --color-accent: #8ef2dd;
+      --shadow-sm: 0 10px 24px rgba(0,0,0,.18);
+      --shadow-md: 0 20px 48px rgba(0,0,0,.28);
+      --shadow-lg: 0 28px 80px rgba(0,0,0,.38);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      color: var(--color-text);
+      background:
+        radial-gradient(circle at top left, rgba(117, 214, 199, 0.16), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(15, 143, 143, 0.12), transparent 30%),
+        var(--color-bg);
+      overflow-x: hidden;
+    }
+    img, svg { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    p { color: var(--color-text-muted); line-height: 1.7; }
+    h1, h2, h3, h4, .display-font { font-family: var(--font-display); letter-spacing: -0.03em; }
+    h1 { font-size: var(--text-2xl); line-height: .98; }
+    h2 { font-size: var(--text-xl); }
+    h3 { font-size: var(--text-lg); }
+    .text-gradient {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .section-space { padding: clamp(4rem, 7vw, 7rem) 0; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .45rem .85rem;
+      border-radius: var(--radius-full);
+      background: var(--color-primary-highlight);
+      color: var(--color-primary);
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .btn-custom {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .65rem;
+      min-height: 48px;
+      padding: .95rem 1.4rem;
+      font-size: var(--text-sm);
+      font-weight: 700;
+      border-radius: var(--radius-full);
+      border: 1px solid transparent;
+      transition: transform var(--transition-interactive), box-shadow var(--transition-interactive), background var(--transition-interactive), color var(--transition-interactive), border-color var(--transition-interactive);
+    }
+    .btn-custom:hover { transform: translateY(-2px); }
+    .btn-custom:active { transform: translateY(0); }
+    .btn-primary-custom {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      color: white;
+      box-shadow: var(--shadow-md);
+    }
+    .btn-primary-custom:hover { color: white; box-shadow: var(--shadow-lg); }
+    .btn-outline-custom {
+      border-color: var(--color-border);
+      background: rgba(255,255,255,0.55);
+      color: var(--color-text);
+      backdrop-filter: blur(12px);
+    }
+    [data-theme="dark"] .btn-outline-custom { background: rgba(12, 27, 28, 0.6); }
+    .navbar-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 1rem 0;
+      backdrop-filter: blur(18px);
+      background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+      border-bottom: 1px solid transparent;
+      transition: border-color .3s ease, background .3s ease;
+    }
+    .navbar-wrap.scrolled { border-color: var(--color-border); }
+    .navbar-brand-custom {
+      display: flex;
+      align-items: center;
+      gap: .9rem;
+      font-family: var(--font-display);
+      font-weight: 800;
+      color: var(--color-text);
+    }
+    .logo-mark {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(15, 143, 143, .18), rgba(117, 214, 199, .32));
+      color: var(--color-primary);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.35);
+    }
+    .nav-link {
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+      font-weight: 700;
+      padding: .65rem .9rem !important;
+      border-radius: var(--radius-full);
+    }
+    .nav-link:hover, .nav-link.active { color: var(--color-primary); background: var(--color-primary-highlight); }
+    .theme-toggle {
+      width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--color-border); display: grid; place-items: center;
+      background: var(--color-surface);
+      color: var(--color-text);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      isolation: isolate;
+      overflow: clip;
+    }
+    #hero-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(180deg, rgba(242,251,251,0.3) 0%, color-mix(in srgb, var(--color-bg) 78%, transparent) 50%, var(--color-bg) 100%);
+    }
+    [data-theme="dark"] .hero::after {
+      background: linear-gradient(180deg, rgba(7,21,22,0.24) 0%, rgba(7,21,22,0.74) 56%, var(--color-bg) 100%);
+    }
+    .hero-card, .info-card, .special-card, .contact-card, .stat-card, .cta-panel {
+      background: color-mix(in srgb, var(--color-surface) 84%, transparent);
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-md);
+      backdrop-filter: blur(14px);
+    }
+    .hero-card {
+      padding: clamp(1.5rem, 3vw, 2rem);
+      border-radius: var(--radius-xl);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(117,214,199,.16), transparent 46%);
+      pointer-events: none;
+    }
+    .hero-bullets {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .hero-bullets .item {
+      display: flex;
+      align-items: center;
+      gap: .85rem;
+      color: var(--color-text);
+      font-weight: 600;
+    }
+    .hero-bullets .item i {
+      width: 2.4rem;
+      height: 2.4rem;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--color-primary);
+      background: var(--color-primary-highlight);
+    }
+    .hero-panel {
+      padding: 1.2rem;
+      border-radius: var(--radius-xl);
+      background: linear-gradient(180deg, color-mix(in srgb, var(--color-surface) 96%, transparent), color-mix(in srgb, var(--color-surface-offset) 92%, transparent));
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero-visual {
+      position: relative;
+      padding: clamp(1.2rem, 3vw, 2rem);
+      min-height: 520px;
+      display: grid;
+      align-items: center;
+    }
+    .doctor-illustration {
+      width: min(100%, 470px);
+      margin-inline: auto;
+      filter: drop-shadow(0 35px 60px rgba(8, 77, 82, .18));
+    }
+    .floating-card {
+      position: absolute;
+      padding: 1rem 1.1rem;
+      border-radius: 1.25rem;
+      background: color-mix(in srgb, var(--color-surface) 88%, transparent);
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-md);
+      max-width: 220px;
+    }
+    .floating-card.small { max-width: 180px; }
+    .floating-1 { top: 8%; left: 0; }
+    .floating-2 { right: 2%; top: 24%; }
+    .floating-3 { bottom: 8%; left: 6%; }
+    .metric {
+      display: flex;
+      align-items: center;
+      gap: .85rem;
+      margin-bottom: .4rem;
+      color: var(--color-text);
+      font-weight: 800;
+    }
+    .metric i {
+      color: var(--color-success);
+      font-size: 1.2rem;
+    }
+
+    .stats-grid {
+      margin-top: -2rem;
+      position: relative;
+      z-index: 5;
+    }
+    .stat-card {
+      padding: 1.5rem;
+      border-radius: var(--radius-lg);
+      height: 100%;
+    }
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: clamp(1.9rem, 1.4rem + 1vw, 2.8rem);
+      color: var(--color-primary);
+      line-height: 1;
+      margin-bottom: .5rem;
+    }
+
+    .section-title { max-width: 700px; }
+    .special-card {
+      position: relative;
+      padding: 1.5rem;
+      border-radius: var(--radius-lg);
+      height: 100%;
+      overflow: hidden;
+      transition: transform var(--transition-interactive), box-shadow var(--transition-interactive), border-color var(--transition-interactive);
+    }
+    .special-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: rgba(15, 143, 143, 0.24); }
+    .special-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 1.2rem;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(15,143,143,.16), rgba(117,214,199,.28));
+      color: var(--color-primary);
+      font-size: 1.35rem;
+      margin-bottom: 1rem;
+    }
+    .special-tag {
+      display: inline-flex;
+      margin-top: .85rem;
+      padding: .35rem .75rem;
+      border-radius: var(--radius-full);
+      background: color-mix(in srgb, var(--color-primary-highlight) 72%, transparent);
+      color: var(--color-primary);
+      font-size: var(--text-xs);
+      font-weight: 700;
+    }
+
+    .process-wrap {
+      padding: clamp(1.5rem, 2vw, 2rem);
+      border-radius: var(--radius-xl);
+      background: linear-gradient(180deg, color-mix(in srgb, var(--color-surface) 94%, transparent), color-mix(in srgb, var(--color-surface-offset) 100%, transparent));
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-md);
+    }
+    .process-step {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--color-divider);
+    }
+    .process-step:last-child { border-bottom: none; }
+    .step-no {
+      flex: 0 0 auto;
+      width: 3rem; height: 3rem; border-radius: 50%;
+      display: grid; place-items: center;
+      font-weight: 800;
+      color: white;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      box-shadow: var(--shadow-sm);
+    }
+
+    .contact-card {
+      padding: clamp(1.4rem, 3vw, 2rem);
+      border-radius: var(--radius-xl);
+      height: 100%;
+    }
+    .info-card {
+      padding: 1.2rem;
+      border-radius: 1.25rem;
+      height: 100%;
+    }
+    .contact-list {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .contact-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .contact-item i {
+      width: 3rem; height: 3rem; border-radius: 50%; display: grid; place-items: center;
+      color: var(--color-primary); background: var(--color-primary-highlight); font-size: 1.15rem;
+      flex: 0 0 auto;
+    }
+    .form-control, .form-select {
+      min-height: 52px;
+      border-radius: 1rem;
+      border: 1px solid var(--color-border);
+      background: color-mix(in srgb, var(--color-surface) 90%, transparent);
+      color: var(--color-text);
+      padding: .9rem 1rem;
+    }
+    .form-control:focus, .form-select:focus {
+      border-color: rgba(15, 143, 143, 0.45);
+      box-shadow: 0 0 0 .25rem rgba(15, 143, 143, 0.12);
+      background: var(--color-surface);
+      color: var(--color-text);
+    }
+    textarea.form-control { min-height: 150px; }
+    .form-label { font-weight: 700; color: var(--color-text); font-size: var(--text-sm); }
+
+    .cta-band {
+      padding-top: 0;
+    }
+    .cta-panel {
+      border-radius: 2rem;
+      padding: clamp(1.6rem, 3vw, 2.2rem);
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-panel::after {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      background: radial-gradient(circle, rgba(117,214,199,.3), transparent 65%);
+      right: -60px;
+      top: -60px;
+      pointer-events: none;
+    }
+
+    footer {
+      padding: 2rem 0 1rem;
+      border-top: 1px solid var(--color-border);
+      background: color-mix(in srgb, var(--color-surface) 70%, transparent);
+    }
+    .footer-grid {
+      display: grid;
+      gap: 2rem;
+    }
+    .footer-links a {
+      display: inline-flex;
+      color: var(--color-text-muted);
+      margin-bottom: .7rem;
+      font-size: var(--text-sm);
+    }
+    .footer-links a:hover { color: var(--color-primary); }
+    .mini-note {
+      font-size: var(--text-xs);
+      color: var(--color-text-faint);
+    }
+    .reveal { opacity: 0; }
+
+    @media (max-width: 991.98px) {
+      .hero { min-height: auto; padding-top: 7rem; padding-bottom: 4rem; }
+      .floating-card { position: static; max-width: none; margin-top: 1rem; }
+      .hero-visual { min-height: auto; }
+      .stats-grid { margin-top: 0; }
+      .navbar-collapse {
+        padding-top: 1rem;
+      }
+      .nav-link { padding-inline: 0 !important; background: transparent !important; }
+    }
+
+    @media (max-width: 575.98px) {
+      .btn-stack-mobile { display: grid; gap: .8rem; }
+      .hero-card, .contact-card, .process-wrap, .cta-panel { border-radius: 1.4rem; }
+      .logo-mark { width: 42px; height: 42px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .reveal { opacity: 1 !important; }
+    }
+  </style>
+</head>
+<body>
+  <a class="visually-hidden-focusable position-absolute top-0 start-0 p-3 bg-white text-dark" href="#main">Skip to content</a>
+
+  <header class="navbar-wrap" id="siteHeader">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg p-0" aria-label="Primary Navigation">
+        <a class="navbar-brand navbar-brand-custom" href="#home">
+          <span class="logo-mark" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Dr Deepak Sharma logo">
+              <path d="M13 24C13 17.9249 17.9249 13 24 13C30.0751 13 35 17.9249 35 24" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" class="logo-path"/>
+              <path d="M24 13V35" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" class="logo-path"/>
+              <path d="M17 28H31" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" class="logo-path"/>
+            </svg>
+          </span>
+          <span>
+            Dr. Deepak Sharma
+            <small class="d-block fw-semibold" style="font-family: var(--font-body); color: var(--color-text-muted); font-size: .78rem; letter-spacing: .04em; text-transform: uppercase;">Physiotherapy & Rehab</small>
+          </span>
+        </a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#specializations">Specializations</a></li>
+            <li class="nav-item"><a class="nav-link" href="#approach">Treatment Process</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item ms-lg-2 d-flex align-items-center gap-2">
+              <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">
+                <i class="bi bi-moon-stars"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="container position-relative">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <div class="hero-card reveal">
+              <span class="eyebrow mb-3"><i class="bi bi-heart-pulse"></i> Restore movement. Relieve pain.</span>
+              <h1 class="mb-3">Advanced physiotherapy care for <span class="text-gradient">pain relief</span> and active recovery.</h1>
+              <p class="mb-4">Dr. Deepak Sharma provides complete physiotherapy support for sports injuries, knee pain, tennis elbow, back pain, neck pain, and individual fitness rehabilitation protocols designed around each patient.</p>
+              <div class="d-flex flex-wrap gap-3 btn-stack-mobile">
+                <a href="#specializations" class="btn-custom btn-primary-custom">Explore Specializations <i class="bi bi-arrow-right"></i></a>
+                <a href="#contact" class="btn-custom btn-outline-custom">Book Appointment <i class="bi bi-calendar2-check"></i></a>
+              </div>
+              <div class="hero-bullets">
+                <div class="item"><i class="bi bi-check2-circle"></i><span>Evidence-based therapy with individualized rehab plans.</span></div>
+                <div class="item"><i class="bi bi-check2-circle"></i><span>Focused treatment for everyday pain and athletic recovery.</span></div>
+                <div class="item"><i class="bi bi-check2-circle"></i><span>Clear treatment goals, guided sessions, and progressive mobility care.</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-visual reveal">
+              <div class="hero-panel">
+                <svg class="doctor-illustration" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Physiotherapist illustration">
+                  <defs>
+                    <linearGradient id="coatGrad" x1="145" y1="148" x2="373" y2="422" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#ffffff"/>
+                      <stop offset="1" stop-color="#dff4f4"/>
+                    </linearGradient>
+                    <linearGradient id="accentGrad" x1="110" y1="94" x2="412" y2="421" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#75D6C7"/>
+                      <stop offset="1" stop-color="#0F8F8F"/>
+                    </linearGradient>
+                  </defs>
+                  <circle cx="260" cy="260" r="220" fill="url(#accentGrad)" opacity="0.14"/>
+                  <circle cx="386" cy="118" r="42" fill="#75D6C7" opacity="0.26"/>
+                  <circle cx="136" cy="155" r="27" fill="#0F8F8F" opacity="0.18"/>
+                  <path d="M170 433C180 372 192 317 199 273C203 246 214 221 244 214C274 207 307 219 319 249C334 287 342 372 350 433H170Z" fill="url(#coatGrad)"/>
+                  <path d="M245 215C281 211 313 226 328 255C339 276 342 305 345 330C318 352 284 364 248 364C228 364 208 360 189 352C193 318 200 283 204 256C208 235 221 219 245 215Z" fill="#F7FEFE"/>
+                  <path d="M225 242C237 270 246 298 252 327C258 298 268 269 282 243" stroke="#0F8F8F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M229 262H276" stroke="#36B5B5" stroke-width="8" stroke-linecap="round"/>
+                  <circle cx="259" cy="163" r="67" fill="#F1C7A3"/>
+                  <path d="M221 153C221 119 246 92 278 92C310 92 337 120 337 154C337 178 322 199 299 208C288 212 276 214 264 214C230 214 221 177 221 153Z" fill="#2A2A39"/>
+                  <path d="M220 151C223 113 252 89 287 89C313 89 337 104 347 129C334 125 323 121 303 122C280 123 264 131 250 139C239 145 230 149 220 151Z" fill="#17353B"/>
+                  <path d="M234 174C242 189 253 196 265 196C277 196 289 190 298 179" stroke="#D28F74" stroke-width="5" stroke-linecap="round"/>
+                  <circle cx="240" cy="162" r="5" fill="#17353B"/>
+                  <circle cx="287" cy="162" r="5" fill="#17353B"/>
+                  <rect x="226" y="131" width="74" height="16" rx="8" fill="#ffffff" opacity="0.16"/>
+                  <path d="M159 268C183 251 204 253 220 271" stroke="#0F8F8F" stroke-width="14" stroke-linecap="round"/>
+                  <path d="M357 262C337 250 315 251 298 269" stroke="#0F8F8F" stroke-width="14" stroke-linecap="round"/>
+                  <path d="M156 270C145 298 133 327 118 365" stroke="#F1C7A3" stroke-width="18" stroke-linecap="round"/>
+                  <path d="M361 266C373 294 387 325 404 360" stroke="#F1C7A3" stroke-width="18" stroke-linecap="round"/>
+                  <circle cx="111" cy="380" r="28" fill="#0F8F8F" opacity="0.18"/>
+                  <circle cx="404" cy="374" r="28" fill="#0F8F8F" opacity="0.18"/>
+                  <path d="M116 380H405" stroke="#36B5B5" stroke-width="9" stroke-linecap="round" opacity="0.4"/>
+                  <path d="M252 215V432" stroke="#DDEEEE" stroke-width="3" opacity="0.9"/>
+                  <path d="M202 434H320" stroke="#B8E9E9" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+                </svg>
+              </div>
+              <div class="floating-card floating-1 reveal">
+                <div class="metric"><i class="bi bi-activity"></i><span>Sports Injury Recovery</span></div>
+                <p class="mb-0">Targeted care to support healing, stability, and safe return to activity.</p>
+              </div>
+              <div class="floating-card small floating-2 reveal">
+                <div class="metric"><i class="bi bi-universal-access-circle"></i><span>Mobility Focus</span></div>
+                <p class="mb-0">Manual therapy and guided movement for better daily function.</p>
+              </div>
+              <div class="floating-card small floating-3 reveal">
+                <div class="metric"><i class="bi bi-shield-check"></i><span>Personalized Protocols</span></div>
+                <p class="mb-0">Each session follows your pain pattern, goals, and recovery stage.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-grid pb-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-6 col-lg-3 reveal">
+            <article class="stat-card">
+              <div class="stat-number" data-count="6">0</div>
+              <h3 class="h5 mb-2">Core treatment areas</h3>
+              <p class="mb-0">Specialized physiotherapy support across major pain and rehab concerns.</p>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3 reveal">
+            <article class="stat-card">
+              <div class="stat-number" data-count="100">0</div>
+              <h3 class="h5 mb-2">Percent custom care</h3>
+              <p class="mb-0">Individual fitness rehab protocols shaped around each patient journey.</p>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3 reveal">
+            <article class="stat-card">
+              <div class="stat-number" data-count="1">0</div>
+              <h3 class="h5 mb-2">Primary goal</h3>
+              <p class="mb-0">Reduce pain, improve mobility, and help patients move with confidence.</p>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3 reveal">
+            <article class="stat-card">
+              <div class="stat-number" data-count="24">0</div>
+              <h3 class="h5 mb-2">Guided support feel</h3>
+              <p class="mb-0">A calm, modern, patient-friendly experience across the whole website.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space" id="specializations">
+      <div class="container">
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-4 mb-5">
+          <div class="section-title reveal">
+            <span class="eyebrow mb-3"><i class="bi bi-stars"></i> Specializations</span>
+            <h2 class="mb-3">Treatment areas designed for pain reduction, movement quality, and stronger recovery outcomes.</h2>
+            <p class="mb-0">Each specialization is presented with a clear clinical focus so patients quickly understand where to begin their treatment journey.</p>
+          </div>
+          <div class="reveal">
+            <a href="#contact" class="btn-custom btn-primary-custom">Schedule an Appointment <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="special-card">
+              <div class="special-icon"><i class="bi bi-lightning-charge"></i></div>
+              <h3>Sports Injuries</h3>
+              <p>Rehab plans for strains, sprains, overuse injuries, and movement restoration after athletic stress.</p>
+              <span class="special-tag">Return-to-activity rehab</span>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="special-card">
+              <div class="special-icon"><i class="bi bi-person-walking"></i></div>
+              <h3>Knee Pain</h3>
+              <p>Strengthening, mobility work, and pain management strategies for walking, stairs, and active life.</p>
+              <span class="special-tag">Joint stability focus</span>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="special-card">
+              <div class="special-icon"><i class="bi bi-hand-index-thumb"></i></div>
+              <h3>Tennis Elbow</h3>
+              <p>Progressive therapy to reduce irritation, improve grip comfort, and rebuild forearm function.</p>
+              <span class="special-tag">Elbow and forearm rehab</span>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="special-card">
+              <div class="special-icon"><i class="bi bi-lungs"></i></div>
+              <h3>Back Pain</h3>
+              <p>Therapeutic guidance for stiffness, muscular imbalance, posture correction, and daily movement ease.</p>
+              <span class="special-tag">Posture and spine care</span>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="special-card">
+              <div class="special-icon"><i class="bi bi-person-standing"></i></div>
+              <h3>Neck Pain</h3>
+              <p>Focused treatment for reduced stiffness, better alignment, and relief from work-related neck strain.</p>
+              <span class="special-tag">Cervical mobility support</span>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="special-card">
+              <div class="special-icon"><i class="bi bi-bar-chart-steps"></i></div>
+              <h3>Fitness Rehab Protocol</h3>
+              <p>Individualized protocols that bridge pain recovery with safe strengthening, endurance, and movement confidence.</p>
+              <span class="special-tag">Personalized progression plan</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space pt-0" id="approach">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-5 reveal">
+            <div class="section-title pe-lg-4">
+              <span class="eyebrow mb-3"><i class="bi bi-clipboard2-pulse"></i> Treatment Process</span>
+              <h2 class="mb-3">A patient-first recovery flow that keeps every step clear and measurable.</h2>
+              <p class="mb-0">The process section helps communicate trust: assessment first, then focused intervention, then a guided rehab progression with practical advice for day-to-day activity.</p>
+            </div>
+          </div>
+          <div class="col-lg-7 reveal">
+            <div class="process-wrap h-100">
+              <div class="process-step">
+                <div class="step-no">01</div>
+                <div>
+                  <h3 class="h5 mb-2">Initial assessment</h3>
+                  <p class="mb-0">Understand pain history, movement restriction, activity demands, and patient goals before treatment begins.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="step-no">02</div>
+                <div>
+                  <h3 class="h5 mb-2">Focused therapy plan</h3>
+                  <p class="mb-0">Select the right combination of manual techniques, guided movement, and targeted therapeutic work.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="step-no">03</div>
+                <div>
+                  <h3 class="h5 mb-2">Progressive rehabilitation</h3>
+                  <p class="mb-0">Improve strength, flexibility, stability, and coordination through planned step-by-step progression.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="step-no">04</div>
+                <div>
+                  <h3 class="h5 mb-2">Return to confident movement</h3>
+                  <p class="mb-0">Support safer work, sport, and everyday activity with maintenance guidance and movement awareness.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space" id="contact">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-5 reveal">
+            <div class="contact-card h-100">
+              <span class="eyebrow mb-3"><i class="bi bi-calendar-heart"></i> Book Appointment</span>
+              <h2 class="mb-3">Contact Dr. Deepak Sharma for your physiotherapy consultation.</h2>
+              <p>Use this appointment section for patient inquiries, session requests, or treatment-related questions. You can replace the placeholder details below with real clinic information anytime.</p>
+              <div class="contact-list">
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <div>
+                    <h3 class="h6 mb-1">Call for booking</h3>
+                    <p class="mb-0">+91 98765 43210</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <div>
+                    <h3 class="h6 mb-1">Email support</h3>
+                    <p class="mb-0">booking@drdeepakphysio.com</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <div>
+                    <h3 class="h6 mb-1">Clinic address</h3>
+                    <p class="mb-0">Your clinic address here, Jaipur, Rajasthan</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-clock"></i>
+                  <div>
+                    <h3 class="h6 mb-1">Consultation hours</h3>
+                    <p class="mb-0">Mon - Sat, 9:00 AM - 7:00 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 reveal">
+            <div class="contact-card h-100">
+              <form class="row g-3" onsubmit="event.preventDefault(); showToast();" novalidate>
+                <div class="col-md-6">
+                  <label for="patientName" class="form-label">Full name</label>
+                  <input type="text" class="form-control" id="patientName" placeholder="Enter patient name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="patientPhone" class="form-label">Phone number</label>
+                  <input type="tel" class="form-control" id="patientPhone" placeholder="Enter mobile number" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="patientEmail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="patientEmail" placeholder="Enter email address">
+                </div>
+                <div class="col-md-6">
+                  <label for="serviceType" class="form-label">Treatment needed</label>
+                  <select class="form-select" id="serviceType">
+                    <option selected>Choose specialization</option>
+                    <option>Sports Injuries</option>
+                    <option>Knee Pain</option>
+                    <option>Tennis Elbow</option>
+                    <option>Back Pain</option>
+                    <option>Neck Pain</option>
+                    <option>Fitness Rehab Protocol</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="appointmentDate" class="form-label">Preferred date</label>
+                  <input type="date" class="form-control" id="appointmentDate">
+                </div>
+                <div class="col-md-6">
+                  <label for="appointmentTime" class="form-label">Preferred time</label>
+                  <input type="time" class="form-control" id="appointmentTime">
+                </div>
+                <div class="col-12">
+                  <label for="patientMessage" class="form-label">Message</label>
+                  <textarea class="form-control" id="patientMessage" placeholder="Describe your pain, injury, or concern"></textarea>
+                </div>
+                <div class="col-12 d-flex flex-wrap gap-3 pt-2 btn-stack-mobile">
+                  <button type="submit" class="btn-custom btn-primary-custom">Request Appointment <i class="bi bi-send"></i></button>
+                  <a href="#specializations" class="btn-custom btn-outline-custom">View Treatments <i class="bi bi-arrow-right-short"></i></a>
+                </div>
+              </form>
+              <div class="alert mt-4 d-none" id="bookingAlert" role="status"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space cta-band">
+      <div class="container reveal">
+        <div class="cta-panel">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <span class="eyebrow mb-3"><i class="bi bi-arrow-repeat"></i> Start your recovery</span>
+              <h2 class="mb-3">Need a conversion-ready medical landing page with modern motion and a trustworthy patient experience?</h2>
+              <p class="mb-0">This CTA block strengthens the footer area with one more booking action and gives visitors a final, clear next step before they leave the page.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="#contact" class="btn-custom btn-primary-custom">Book Your Visit <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid row g-4 align-items-start">
+        <div class="col-lg-4">
+          <a class="navbar-brand-custom mb-3 d-inline-flex" href="#home">
+            <span class="logo-mark" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 24C13 17.9249 17.9249 13 24 13C30.0751 13 35 17.9249 35 24" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M24 13V35" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M17 28H31" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span>Dr. Deepak Sharma</span>
+          </a>
+          <p class="mb-3">Modern physiotherapy website layout with specialization highlights, appointment contact form, strong CTA sections, and a clean medical teal identity.</p>
+          <a href="#contact" class="btn-custom btn-outline-custom">Contact for Appointment</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h3 class="h6 mb-3">Pages</h3>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#specializations">Specializations</a>
+            <a href="#approach">Treatment Process</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h3 class="h6 mb-3">Treatments</h3>
+          <div class="footer-links">
+            <a href="#specializations">Sports Injuries</a>
+            <a href="#specializations">Knee Pain</a>
+            <a href="#specializations">Tennis Elbow</a>
+            <a href="#specializations">Back & Neck Pain</a>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <h3 class="h6 mb-3">Booking CTA</h3>
+          <p class="mb-3">Encourage patients to reach out directly for a consultation or injury assessment.</p>
+          <a href="#contact" class="btn-custom btn-primary-custom">Make Appointment</a>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 mt-4 pt-4 border-top" style="border-color: var(--color-border) !important;">
+        <p class="mini-note mb-0">© 2026 Dr. Deepak Sharma Physiotherapy. All rights reserved.</p>
+        <p class="mini-note mb-0">Responsive Bootstrap site with GSAP animation and custom JS background.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script>
+    const root = document.documentElement;
+    const themeToggle = document.querySelector('[data-theme-toggle]');
+    let currentTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+    function setTheme(theme) {
+      currentTheme = theme;
+      root.setAttribute('data-theme', theme);
+      themeToggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
+      themeToggle.innerHTML = theme === 'dark'
+        ? '<i class="bi bi-sun"></i>'
+        : '<i class="bi bi-moon-stars"></i>';
+    }
+    setTheme(currentTheme);
+    themeToggle.addEventListener('click', () => setTheme(currentTheme === 'dark' ? 'light' : 'dark'));
+
+    const header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 8);
+    });
+
+    const alertBox = document.getElementById('bookingAlert');
+    function showToast() {
+      alertBox.className = 'alert alert-success mt-4';
+      alertBox.innerHTML = '<strong>Appointment request captured.</strong> Replace this demo action with your backend, WhatsApp link, or email integration.';
+    }
+
+    if (window.gsap) {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.from('.logo-path', {
+        drawSVG: '0%',
+        duration: 1.4,
+        stagger: 0.08,
+        ease: 'power3.out'
+      });
+
+      gsap.from('.hero-card > *', {
+        opacity: 0,
+        y: 18,
+        duration: .9,
+        ease: 'power3.out',
+        stagger: .08,
+        delay: .2
+      });
+
+      gsap.from('.doctor-illustration', {
+        opacity: 0,
+        scale: .92,
+        duration: 1.1,
+        ease: 'power3.out',
+        delay: .3
+      });
+
+      gsap.to('.floating-1', { y: -14, duration: 3.6, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+      gsap.to('.floating-2', { y: 12, duration: 3.1, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+      gsap.to('.floating-3', { y: -10, duration: 3.8, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+
+      gsap.utils.toArray('.reveal').forEach((el) => {
+        gsap.fromTo(el,
+          { opacity: 0, clipPath: 'inset(12% 0 0 0 round 1rem)' },
+          {
+            opacity: 1,
+            clipPath: 'inset(0% 0 0 0 round 1rem)',
+            duration: .9,
+            ease: 'power3.out',
+            scrollTrigger: { trigger: el, start: 'top 88%' }
+          }
+        );
+      });
+
+      gsap.utils.toArray('.stat-number').forEach((num) => {
+        const value = Number(num.dataset.count || 0);
+        gsap.fromTo(num, { innerText: 0 }, {
+          innerText: value,
+          duration: 1.6,
+          ease: 'power2.out',
+          snap: { innerText: 1 },
+          scrollTrigger: { trigger: num, start: 'top 90%' }
+        });
+      });
+    }
+
+    const canvas = document.getElementById('hero-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let w = 0, h = 0;
+    let mouse = { x: null, y: null };
+
+    function resizeCanvas() {
+      w = canvas.width = window.innerWidth;
+      h = canvas.height = window.innerHeight;
+      const count = Math.min(80, Math.max(36, Math.floor(w / 22)));
+      particles = Array.from({ length: count }, () => ({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        vx: (Math.random() - 0.5) * 0.45,
+        vy: (Math.random() - 0.5) * 0.45,
+        r: Math.random() * 2.2 + 1
+      }));
+    }
+
+    function getColors() {
+      const styles = getComputedStyle(document.documentElement);
+      return {
+        primary: styles.getPropertyValue('--color-primary').trim() || '#0f8f8f',
+        secondary: styles.getPropertyValue('--color-secondary').trim() || '#36b5b5',
+        accent: styles.getPropertyValue('--color-accent').trim() || '#75d6c7'
+      };
+    }
+
+    function draw() {
+      const { primary, secondary, accent } = getColors();
+      ctx.clearRect(0, 0, w, h);
+
+      const grad = ctx.createRadialGradient(w * 0.15, h * 0.15, 0, w * 0.15, h * 0.15, Math.max(w, h) * 0.6);
+      grad.addColorStop(0, primary + '22');
+      grad.addColorStop(1, 'transparent');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, w, h);
+
+      particles.forEach((p, i) => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0 || p.x > w) p.vx *= -1;
+        if (p.y < 0 || p.y > h) p.vy *= -1;
+
+        const dx = mouse.x !== null ? mouse.x - p.x : 9999;
+        const dy = mouse.y !== null ? mouse.y - p.y : 9999;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 120) {
+          p.x -= dx * 0.004;
+          p.y -= dy * 0.004;
+        }
+
+        ctx.beginPath();
+        ctx.fillStyle = i % 3 === 0 ? primary + '55' : i % 3 === 1 ? secondary + '50' : accent + '55';
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fill();
+
+        for (let j = i + 1; j < particles.length; j++) {
+          const q = particles[j];
+          const ddx = p.x - q.x;
+          const ddy = p.y - q.y;
+          const d = Math.sqrt(ddx * ddx + ddy * ddy);
+          if (d < 110) {
+            ctx.beginPath();
+            ctx.strokeStyle = primary + Math.floor((1 - d / 110) * 36).toString(16).padStart(2, '0');
+            ctx.lineWidth = 1;
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(q.x, q.y);
+            ctx.stroke();
+          }
+        }
+      });
+      requestAnimationFrame(draw);
+    }
+
+    window.addEventListener('mousemove', (e) => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+    });
+    window.addEventListener('mouseleave', () => { mouse.x = null; mouse.y = null; });
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+    draw();
+  </script>
+</body>
+</html>
